@@ -14,7 +14,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f5f7fa;
+      background: #f2f4f7;
       margin: 0;
       padding: 0;
       display: flex;
@@ -22,55 +22,79 @@
       align-items: center;
       min-height: 100vh;
     }
+
     .card {
-      background: white;
-      width: 90%;
-      max-width: 420px;
+      background: #fff;
+      width: 380px;
       padding: 30px;
-      border-radius: 16px;
+      border-radius: 18px;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
     }
-    img {
+
+    .profile-img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 15px;
+      border: 3px solid #0a66c2;
     }
+
     h1 {
       margin: 10px 0;
       font-size: 26px;
     }
+
     p {
       color: #555;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
+
     a {
       display: block;
       text-decoration: none;
-      background: #0a66c2;
-      color: white;
-      padding: 12px;
+      padding: 14px;
       margin: 10px 0;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: bold;
+      color: #fff;
     }
-    a.secondary {
+
+    .resume {
+      background: #0a66c2;
+    }
+
+    .github {
       background: #24292e;
+    }
+
+    .linkedin {
+      background: #0a66c2;
     }
   </style>
 </head>
 
 <body>
   <div class="card">
-    <img src="./profile.jpg" alt="Jithin George">
-    <h1>Hey, I'm Jithin 👋</h1>
-    <p>AI / ML | Python | Robotics</p>
+    <!-- PROFILE PHOTO -->
+    <img src="./profile.jpg" class="profile-img" alt="Jithin George">
 
-    <a href="#" target="_blank">Download Resume</a>
-    <a class="secondary" href="https://github.com/Codingwithjithin" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+    <h1>Hey, I'm Jithin George👋</h1>
+    <p>AI / ML Engineer</p>
+
+    <!-- BUTTONS -->
+    <a class="resume" href="https://drive.google.com/" target="_blank">
+      Download Resume
+    </a>
+
+    <a class="github" href="https://github.com/Codingwithjithin" target="_blank">
+      GitHub
+    </a>
+
+    <a class="linkedin" href="https://www.linkedin.com/in/jithingeorge/" target="_blank">
+      LinkedIn
+    </a>
   </div>
 </body>
 </html>
