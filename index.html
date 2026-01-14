@@ -14,54 +14,63 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
       background: #f5f7fa;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
     .card {
-      margin-top: 80px;
       background: white;
       width: 90%;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 420px;
       padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
     }
     img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
+      margin-bottom: 15px;
     }
     h1 {
-      margin: 15px 0 5px;
+      margin: 10px 0;
+      font-size: 26px;
     }
     p {
-      color: gray;
+      color: #555;
+      margin-bottom: 20px;
     }
     a {
       display: block;
-      margin-top: 15px;
-      padding: 12px;
+      text-decoration: none;
       background: #0a66c2;
       color: white;
-      text-decoration: none;
+      padding: 12px;
+      margin: 10px 0;
       border-radius: 8px;
+      font-weight: bold;
+    }
+    a.secondary {
+      background: #24292e;
     }
   </style>
 </head>
 
 <body>
   <div class="card">
-    <img src="profile.jpg" alt="Profile">
+    <img src="profile.jpg" alt="Jithin George">
     <h1>Hey, I'm Jithin 👋</h1>
     <p>AI / ML | Python | Robotics</p>
-    <a href="#">Download Resume</a>
-    <a href="https://github.com/jithingeorge">GitHub</a>
-    <a href="https://linkedin.com">LinkedIn</a>
+
+    <a href="#" target="_blank">Download Resume</a>
+    <a class="secondary" href="https://github.com/Codingwithjithin" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
   </div>
 </body>
 </html>
